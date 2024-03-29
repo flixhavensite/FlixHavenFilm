@@ -288,11 +288,6 @@ div.categoria:hover span {
     visibility: visible;
     opacity: 1;
 }
-section.destaque, section#content{
-    opacity: 0; /* Começa com a opacidade em 0 */
-    transition: opacity .7s ease-in; /* Adiciona uma transição suave */
-  }
-  
 
 @media screen and (max-width: 1000px) {
     nav a{
