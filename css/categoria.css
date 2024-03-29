@@ -292,13 +292,6 @@ section.destaque, section#content{
     opacity: 0; /* Começa com a opacidade em 0 */
     transition: opacity .7s ease-in; /* Adiciona uma transição suave */
   }
- section.destaque.active{
-    opacity: 1;
-}
-section#content.active {
-    opacity: 1;
-    transition-delay: .5s;
-}
   
 
 @media screen and (max-width: 1000px) {
