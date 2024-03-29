@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Torrents - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/livro.css'>
+    <link rel="icon" href="UTorrent_(logo).png">
+    <style>
+        .infos {
+            opacity: 0; 
+            transition: opacity 0.5s; 
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+
+        #iframe {
+            opacity: 0; 
+            transition: opacity 0.5s; 
+        }
+
+        #iframe.show {
+           opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Filmes</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="Livros.html">Livros</a> </li>
+                <li><a href="tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme...">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme">
+        <div class="poster">
+            <img src=" https://m.media-amazon.com/images/I/91yEPgRcELL._SL1500_.jpg" height="295" width="200" />
+        </div>
+        <div class="info">
+            <h1> Os sete maridos de evelyn hugo</h1>
+            <h3>escrito por </h3>
+            <h2>Taylor Jenkins Reid
+            </h2><br>
+            <h3>Publicação: 21/10/2019</h3><br>
+            <h3>Romance Drama</h3><br>
+            <img src="https://th.bing.com/th/id/R.45b0e69add05f7cdbee40cc9997bd7b4?rik=4d9EmAopr%2f2ezw&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f03%2famazon_logo.png&ehk=KIOX8nPK%2fGxpm1icaTfjicFXU1wiFYSyU1BStlOIFaE%3d&risl=&pid=ImgRaw&r=0">
+            <h3>4.8 ★</h3><br>
+            <div class="sinopse">
+                <h3>Lendária estrela de Hollywood, Evelyn Hugo sempre esteve sob os holofotes ― seja estrelando uma produção vencedora do Oscar, protagonizando algum escândalo ou aparecendo com um novo marido… pela sétima vez. Agora, prestes a completar oitenta anos e reclusa em seu apartamento no Upper East Side, a famigerada atriz decide contar a própria história ― ou sua “verdadeira história” ―, mas com uma condição: que Monique Grant, jornalista iniciante e até então desconhecida, seja a entrevistadora.</h3><br> <br>
+                <div class="ficha">
+                    <div class="infotext">
+                        <button style="font-family: 'FonteCorpo';" onclick="toggleInfos()">Info</button>
+                    </div>
+                    <div class="infos" id="infos">
+                        <div>
+                            <h2>Páginas</h2>
+                            <ul>
+                                <li>360
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Editora</h2>
+                            <ul>
+                                <li>Paralela
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Idioma</h2>
+                            <ul>
+                                <li>Portugês -BR
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 style="font-size: 10px;">Disponível em: <button style="font-size: 10px;">PDF</button> 
+        </div>
+    </section>
+
+    <script>
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+        function toggleTrailer() {
+            var iframe = document.getElementById('iframe');
+            iframe.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

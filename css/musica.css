@@ -1,0 +1,548 @@
+@font-face {
+    font-family: 'FonteCorpo';
+    src: url(../fontes/SF-Pro-Display-Regular.otf);
+}
+
+
+html {
+    width: 100%;
+}
+
+
+body {
+    font-family: 'FonteCorpo';
+    width: 100%;
+    letter-spacing: .5px;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 30px;
+    margin-left: 1%;
+    font-weight: 100;
+
+}
+
+
+a {
+    font-family: 'FonteCorpo';
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+
+header img {
+    margin-left: 3%;
+    max-width: 6%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(2, 2, 4, 0.878);
+    color: rgba(18, 23, 34, 0.995);
+    font-family: 'FonteTitulo';
+    height: 8%;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 20px black;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+#content h1 {
+    margin-left: 1%;
+    margin: .5%;
+}
+
+header li:hover {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 7%;
+    font-size: 16px;
+    font-family: 'FonteCorponav';
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    display: inline-flex;
+    width: 90%;
+
+
+}
+
+nav ul li {
+    padding: 1%;
+    margin: 2%;
+    margin-top: 2%;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'FonteCorponav';
+    transition: .5s ease;
+
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.216);
+    border-radius: 10px;
+    transition: .5s ease;
+    z-index: 2;
+}
+
+input {
+    font-family: 'FonteCorpo';
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    max-width: 200%;
+    font-size: 10px;
+
+}
+
+form {
+    display: flex;
+    max-width: 20%;
+}
+
+section.destaque {
+    position: relative;
+    width: 100%;
+    font-family: 'FonteCorpo';
+    background-position: center;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.074);
+    /* Cor de fundo com opacidade reduzida */
+    background-blend-mode: multiply;
+    /* Mistura a cor de fundo com a imagem de fundo */
+    height: 78vh;
+    background-size: cover;
+
+
+}
+
+section.destaque::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78vh;
+    background-color: rgba(0, 0, 0, 0.193);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 90%);
+    backdrop-filter: brightness(130%);
+    filter: saturate(130%);
+
+}
+
+div.infoblock {
+    position: relative;
+    text-align: start;
+    margin: auto;
+    width: auto;
+    height: 100%;
+    padding-left: 1%;
+    opacity: 1;
+    background: linear-gradient(90deg, #000000, rgba(2, 2, 4, 0) 30%);
+    left: 0%;
+
+}
+
+div.info h1 {
+    font-size: 35px;
+    padding: 0%;
+    margin: 0%;
+    width: auto;
+    font-family: 'FonteCorpo';
+    text-shadow: 1px 1px 5px black;
+}
+
+#logobanner {
+    width: 20%;
+}
+
+div.info h3 {
+    font-size: 16px;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'FonteCorpo';
+    font-weight: 100;
+}
+
+div.info2 {
+    font-size: 18px;
+    width: auto;
+    padding: 0%;
+    margin: 0%;
+    font-weight: 550;
+}
+
+.info h2 {
+    font-size: 20px;
+    width: auto;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'FonteTitulo';
+}
+
+div.info {
+    position: absolute;
+    z-index: 4;
+    bottom: 0%;
+}
+
+div.info img {
+    width: 1%;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+div.info p {
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+    display: none;
+    transition: .5s ease;
+    opacity: 0;
+    padding: 3px;
+    top: 35%;
+}
+
+div.info img:hover+p {
+    display: inline-block;
+    opacity: 1;
+    transition: .5 ease;
+}
+
+.sinopse {
+    width: 60%;
+    font-size: 9px;
+
+}
+
+button {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: blue;
+    width: auto;
+    margin-top: 3px;
+    padding: 4px;
+    margin-bottom: 1%;
+    display: inline-block;
+    margin-right: -1.5%;
+    margin-top: 1%;
+    margin-left: 0;
+}
+
+div.infos {
+    left: 10%;
+    bottom: 15%;
+    margin: 0%;
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.892);
+    background-color: rgba(64, 64, 64, 0.977);
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 14px;
+    padding: 1%;
+    opacity: 0;
+    z-index: 6;
+    transition: 0.5s ease;
+}
+
+#content h1 {
+    margin-bottom: 0;
+    z-index: 2;
+    font-weight: 500;
+    padding-left: 1%;
+}
+
+#musicas {
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+    /* Permite rolagem horizontal */
+    -webkit-overflow-scrolling: touch;
+    /* Ativa a rolagem suave em dispositivos iOS */
+    scroll-behavior: smooth;
+    /* Adiciona rolagem suave */
+    padding-bottom: 2%;
+    /* Adicionado um espaço extra para compensar a barra de rolagem vertical */
+    padding-top: 1%;
+    margin-left: 0%;
+    width: auto;
+}
+
+#musicas::-webkit-scrollbar {
+    display: none;
+    /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+}
+
+div.musica img {
+    position: relative;
+    border: .1px rgba(241, 241, 241, 0.226) solid;
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.785);
+    transition: .5s ease;
+}
+
+div.musica:hover img {
+    border: .5px rgba(213, 213, 213, 0.76) solid;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.514);
+    transition: .5s ease;
+}
+
+.musica:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+    color: aliceblue
+}
+
+
+div.musica {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 12%;
+    font-size: 13.4px;
+    margin-left: 0%;
+    transition: .5s ease;
+    word-wrap: break-word;
+    vertical-align: top;
+    color: transparent;
+    margin-left: 1%;
+}
+
+
+div.musica span {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 3%;
+    right: 7%;
+    background-color: rgb(142, 167, 230);
+    padding: 1%;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0px 0px 3px black;
+    border: 1px rgba(0, 0, 0, 0.59);
+    transition: .5s ease;
+    color: rgb(0, 0, 0);
+}
+
+div.musica:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        font-size: 14px;
+    }
+
+    header img {
+        max-width: 10%;
+    }
+
+    input {
+        display: none;
+        width: 0%;
+    }
+
+    div.musica {
+        width: 14%;
+        font-size: 10px;
+    }
+
+    div.musica img {
+        border: 1px black solid;
+        float: center;
+    }
+
+    div.musica span {
+        position: absolute;
+        margin-top: 4%;
+        right: 10%;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    div.musica {
+        font-size: 12px;
+    }
+
+    header {
+        height: 8%;
+    }
+
+    nav {
+        margin-right: 14%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section#content h1 {
+        font-size: 25px;
+    }
+
+    header {
+        height: 8%;
+    }
+
+    #logobanner {
+        width: 25%;
+    }
+
+    div.info h1 {
+        font-size: 25px;
+    }
+
+    div.info h3 {
+        font-size: 12px;
+    }
+
+    div.info img {
+        width: 2.5%;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    div.sinopse {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
+    div.musica {
+        font-size: 9px;
+        width: 20%;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+
+    section.destaque {
+        height: 60vh;
+    }
+
+    section.destaque::before {
+        height: 60vh;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        width: 100%;
+        margin: 0%;
+    }
+
+    div.musica {
+        width: 25%;
+        margin-left: 1%;
+        font-size: 5px;
+        margin-right: 2%;
+    }
+
+    section.destaque {
+        height: 60vh;
+    }
+
+    section.destaque::before {
+        height: 60vh;
+    }
+
+    div.info h1 {
+        font-size: 25px;
+    }
+
+    div.info h3 {
+        font-size: 12px;
+    }
+
+    div.info {
+        left: 2%;
+    }
+
+    #logobanner {
+        width: 30%;
+    }
+
+    div.sinopse {
+        width: 65%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 300px) {
+    nav a {
+        font-size: 13px;
+    }
+
+    body {
+        width: 100%;
+        margin: 0%;
+    }
+
+    div.musica {
+        width: 27%;
+        height: 50%;
+        margin-left: 1%;
+        font-size: 10px;
+        margin-right: 1%;
+        margin-top: 15;
+    }
+
+    #musicas {
+        margin-bottom: 4%;
+    }
+
+    section#content h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        margin-right: 25%;
+    }
+}
+
+@media screen and (max-width: 200px) {
+
+    nav a {
+        font-size: 5px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+
+}

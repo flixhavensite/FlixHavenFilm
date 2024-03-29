@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'FonteCorpo';
+    src: url(../fontes/SF-Pro-Text-Medium.otf) ;
+}
+@font-face {
+    font-family: 'FonteTitulo';
+    src: url(../fontes/fontetitulo.otf) ;
+}
+@font-face {
+    font-family: 'FonteCorponav';
+    src: url(../fontes/SF-Pro-Text-Medium.otf) ;
+}
+body {
+    margin: 0%;
+    width: auto;
+    font-family: 'FonteCorpo';
+    font-size: 18px;
+    color: aliceblue;
+    background-color: rgba(2, 2, 4, 0.908);
+    text-shadow: 0px 0px 5px black;
+    word-spacing: 1px;
+    letter-spacing: .5px;
+    font-weight: 100;
+}
+h1{
+    font-size: 35px;
+    font-family: 'FonteTitulo';
+}
+h2{
+    font-size: 24px;
+    font-family: 'FonteTitulo';
+}
+h3{
+    font-size: 16px;
+    font-family: 'FonteCorpo';
+}
+h1, h2, h3{
+    display: inline;
+    margin-right: 1%;
+    font-weight:150;
+}
+a{
+    font-family: 'FonteCorpo';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-left: 2%;
+}
+header img{
+    margin-left: 3%;
+    max-width: 10%;
+    margin-top: .9%;
+    margin-bottom: 2%;
+}
+header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(2, 2, 4, 0.878);
+    color: rgba(18, 23, 34, 0.995);
+    font-family: 'FonteTitulo';
+    height: 15%;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 20px black;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+nav{
+  margin-left: auto;
+  margin-right: 7%;
+  font-size: 16px;
+  font-family: 'FonteCorponav';
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+  display: inline-flex;
+  width: 90%;
+   
+   
+}
+nav ul li{
+     margin: 2%;
+     margin-top: 2%;
+     align-items: center; 
+     color: aliceblue;
+     font-family: 'FonteCorponav';
+     
+}
+input{
+    font-family: 'FonteCorpo';
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    max-width: 200%;
+    font-size: 10px;
+
+}
+form{
+    display: flex;
+    max-width: 20%;
+}
+section.filme{
+    margin: auto;
+    margin-top: 15%;
+    font-family: 'FonteCorpo';
+}
+div.poster img{
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.686);
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: .5s ease;
+}
+div.poster{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 13.5px;
+    margin-left: -1%;
+    width: 15%;
+    height: 30%;
+    transition: .5s ease;
+    margin-right: auto;
+    word-wrap: break-word; /* ou overflow-wrap: break-word; */
+    vertical-align: top; 
+    margin: 1%;
+}
+div.info{
+  position: relative;
+  display: inline-block;
+  text-align: start;
+  margin: auto;
+  width: 65%;
+  margin-top: 1%;
+}
+.info img{
+    width: 2%;
+    display: inline-block;
+    
+}
+
+.sinopse{
+    width: 75%;
+    font-size: 9px;
+
+}
+button{
+    height: 1%;
+    font-size: 13px;
+    background-color: rgb(3, 71, 127);
+    color: aliceblue;
+    text-shadow: 1px 1px 0px black;
+    border-style: groove;
+    border-radius: 4px;
+    z-index: 2;
+}
+.ficha ul{
+    margin: 0;
+    padding: 0;
+}
+.ficha li{
+    list-style-type: none;
+    text-align: left;
+}
+.infotext{
+    width: 3%;
+}
+.ficha{
+    transition: 0.5s ease;
+    font-size: 10px;
+}
+.ficha h2{
+    font-size: 14px;
+}
+.ficha .infos div{
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: top;
+}
+.ficha .infos{
+    left: 10%;
+    bottom: 15%;
+    margin: 1%;
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.892);
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    color: aliceblue;
+   font-size: 14px;
+   padding: 1%;
+   opacity: 0;
+   z-index: 1;
+   transition: 0.5s ease;
+}
+
+div.trailer iframe{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 30%;
+    height: auto;
+    transition: .5s ease;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 4px black;
+    top: 5%;
+    z-index: 2;
+}
+@media screen and (max-width: 770px){
+    
+    body{
+        font-size: 14px;
+        width: 100%;
+    }
+    header{
+        height: 8%;
+}
+    header img{
+        max-width: 10%;
+    }
+    nav{
+        margin-top: 1%;
+       
+    }
+    nav a{
+        font-size: 12px;
+    }
+    nav ul li{
+        margin-right: 1.5%;
+    }
+    
+    div.filme{
+        width: 18%;
+        height: 53%;
+        margin-left: -1%;
+        font-size: 10px;
+        margin-right: 2%;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    div.info{
+        width: 70%;
+        margin-left: 2%;
+    }
+      div.poster{
+        width: 25%;
+        height: 60%;
+    }
+
+    .sinopse{
+        width: 90%;
+        font-size: 7px;
+    }
+ 
+    .ficha .span{
+       font-size: 9px;
+    }
+    .ficha h2{
+        font-size: 11px;
+    }
+    .infos li{
+        font-size: 10px;
+    }
+    section.filme{
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 435px) {
+    nav{
+        margin-right: 10%;
+       
+    }
+    input{
+        display: none;
+        width: 0px;
+        
+    }
+    form{
+        font-size: 9px ;
+    }
+    nav a{
+         font-size: 10px;
+    }
+    div.sinopse{
+        width: 90%;
+    }
+    div.poster {
+        display: flex; /* Define o container como flexível */
+        justify-content: center; /* Centraliza o conteúdo horizontalmente */
+        align-items: center; /* Centraliza o conteúdo verticalmente */
+        width: 30%; /* Largura desejada */
+        margin: 0 auto; /* Margens automáticas para centralizar horizontalmente */
+        text-align: center; /* Centraliza o texto dentro do div */
+    }
+    .infos li{
+        font-size: 10px;
+        padding-bottom: 1%;
+    }
+    .info {
+        width: 100%;
+    
+    }
+    .info img{
+        width: 5%;
+    }
+    .info h2{
+        font-size: 9px;
+    }
+    .info h1{
+        font-size: 13px
+    }
+    section.filme{
+    margin-top: 23%;
+
+    }
+    div.trailer iframe{
+        width: 100%;
+    }
+}

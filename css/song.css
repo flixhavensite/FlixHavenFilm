@@ -1,0 +1,502 @@
+@font-face {
+    font-family: 'FonteCorpo';
+    src: url(../fontes/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: 'FonteTitulo';
+    src: url(../fontes/SF-Pro-Display-Regular.otf);
+}
+
+@font-face {
+    font-family: 'FonteCorponav';
+    src: url(../fontes/SF-Pro-Display-Regular.otf);
+}
+
+body {
+    margin: 0%;
+    width: auto;
+    font-family: 'FonteCorpo';
+    font-size: 18px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 5px black;
+    word-spacing: 1px;
+    letter-spacing: .5px;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'FonteTitulo';
+    font-weight: 100;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'FonteTitulo';
+    font-weight: 100;
+
+}
+
+h3 {
+    font-size: 16px;
+    font-family: 'FonteCorpo';
+    font-weight: 100;
+
+}
+
+h1,
+h2,
+h3 {
+    display: inline;
+    margin-right: 1%;
+    font-weight: 100;
+}
+nav  a {
+    font-family: 'FonteCorpo';
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+
+}
+div.info a {
+    font-family: 'FonteCorpo';
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-left: 2%;
+}
+
+header img {
+    margin-left: 3%;
+    max-width: 6%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.934);
+    color: rgba(18, 23, 34, 0.995);
+    font-family: 'FonteTitulo';
+    height: 8%;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 20px black;
+    z-index: 1000;
+    backdrop-filter: blur(50px);
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 7%;
+    font-size: 16px;
+    font-family: 'FonteCorponav';
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    display: inline-flex;
+    width: 90%;
+
+
+}
+
+nav ul li {
+    padding: 1%;
+    margin: 2%;
+    margin-top: 2%;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'FonteCorponav';
+
+}
+
+nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.216);
+    border-radius: 10px;
+    transition: .5s ease;
+    z-index: 2;
+}
+
+input {
+    font-family: 'FonteCorpo';
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    max-width: 200%;
+    font-size: 10px;
+
+}
+
+form {
+    display: flex;
+    max-width: 20%;
+}
+
+section.filme {
+    position: relative;
+    margin: auto;
+    margin-top: 15%;
+    width: 100%;
+    font-family: 'FonteCorpo';
+    align-items: center;
+    background-position: center;
+    opacity: 0.6;
+    z-index: 0;
+    background-size: cover;
+}
+
+div.poster img {
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.686);
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: .5s ease;
+}
+
+div.poster {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 13.5px;
+    margin-left: -1%;
+    width: 15%;
+    height: 30%;
+    transition: .5s ease;
+    margin-right: auto;
+    word-wrap: break-word;
+    /* ou overflow-wrap: break-word; */
+    vertical-align: top;
+    margin: 1%;
+}
+
+section.filme {
+    position: relative;
+    margin-top: 5%;
+    width: 100%;
+    font-family: 'FonteCorpo';
+    background-position: center;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.23);
+    /* Cor de fundo com opacidade reduzida */
+    background-blend-mode: multiply;
+    /* Mistura a cor de fundo com a imagem de fundo */
+    height: 85vh;
+    background-position: center;
+
+
+}
+
+section.filme::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.677);
+    /* Cor de fundo com opacidade reduzida */
+    z-index: -1;
+    /* Coloca o pseudo-elemento atrás do conteúdo */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0)100%);
+    background-position: center;
+    backdrop-filter: brightness(55%);
+    filter: saturate(130%);
+
+}
+
+div.infoblock {
+    position: relative;
+    text-align: start;
+    margin: auto;
+    width: auto;
+    height: 100%;
+    padding-left: 1%;
+    opacity: 1;
+    background: linear-gradient(90deg, #000000, rgba(2, 2, 4, 0) 30%);
+}
+
+div.info {
+    position: absolute;
+    bottom: 4%;
+    z-index: 4;
+}
+
+.info img {
+    width: 1%;
+    display: inline-block;
+
+}
+
+.sinopse {
+    width: 40%;
+    font-size: 9px;
+
+}
+
+button {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: blue;
+    width: auto;
+    margin-top: 3px;
+    padding: 3px;
+    margin-bottom: 1%;
+    display: inline-block;
+    margin-right: -1.5%;
+    margin-top: 1%;
+    margin-left: 0;
+}
+
+.ficha ul {
+    margin: 0;
+    padding: 0;
+}
+
+.ficha li {
+
+    text-align: left;
+}
+
+div.infotext {
+    width: auto;
+    top: 0%;
+}
+
+.ficha {
+    transition: 0.5s ease;
+    font-size: 10px;
+}
+
+.ficha h2 {
+    font-size: 14px;
+}
+
+.ficha .infos div {
+    display: inline-block;
+    margin-left: 5%;
+    vertical-align: top;
+}
+
+ol {
+    padding-left: 10%;
+    list-style-type: decimal;
+}
+
+div.infos {
+    left: 10%;
+    bottom: 15%;
+    margin: 0%;
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.892);
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    color: aliceblue;
+    width: auto;
+    font-size: 14px;
+    padding: 1%;
+    opacity: 0;
+    z-index: 6;
+    transition: 0.5s ease;
+}
+
+#trailers {
+    margin-top: 10%;
+}
+
+section.trailers iframe {
+    margin: 1%;
+    width: 300px;
+    height: auto;
+    transition: .5s ease;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+    z-index: 2;
+}
+
+section.trailers h1 {
+    margin-top: -3%;
+}
+
+section.trailers {
+    margin: 1%;
+    padding: 3px;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    background-color: rgba(255, 255, 255, 0.934);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+section.trailers::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+
+    body {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    header {
+        height: 8%;
+    }
+
+    header img {
+        max-width: 10%;
+    }
+    nav{
+        margin-right: 14%;
+    }
+    .sinopse {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .ficha .span {
+        font-size: 9px;
+    }
+    
+    input {
+        display: none;
+        width: 0%;
+    }
+
+    .ficha h2 {
+        font-size: 11px;
+    }
+
+    .infos li {
+        font-size: 7px;
+    }
+
+    section.trailers iframe {
+        width: 250px;
+    }
+
+    section.trailers::after {
+        margin-top: -10%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section#content h1 {
+        font-size: 25px;
+    }
+
+    header {
+        height: 8%;
+    }
+
+    #logobanner {
+        width: 25%;
+    }
+
+    div.info h1 {
+        font-size: 25px;
+    }
+
+    div.info h3 {
+        font-size: 12px;
+    }
+
+    div.info img {
+        width: 2.5%;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    div.sinopse {
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 435px) {
+
+    section.filme {
+        background-position-x: 22%;
+    }
+
+    input {
+        display: none;
+        width: 0px;
+
+    }
+
+    form {
+        font-size: 9px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .infos li {
+        font-size: 10px;
+        padding-bottom: 1%;
+    }
+
+    .info img {
+        width: 3%;
+    }
+
+    .info h2 {
+        font-size: 12px;
+    }
+
+    .info h1 {
+        font-size: 25px
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .sinopse {
+        width: 90%;
+    }
+
+    div.info {
+        padding-top: 50%;
+        word-spacing: 0;
+    }
+
+    section.trailers iframe {
+        width: 60%;
+    }
+
+    div.infoblock {
+        width: 95%;
+        background: linear-gradient(90deg, #000000, rgba(2, 2, 4, 0) 0%);
+    }
+}

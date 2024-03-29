@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Torrents - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/filme.css'>
+    <link rel="icon" href="UTorrent_(logo).png">
+    <style>
+        .infos {
+            opacity: 0; 
+            transition: opacity 0.5s; 
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+
+        #iframe {
+            opacity: 0; 
+            transition: opacity 0.5s; 
+        }
+
+        #iframe.show {
+           opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="Livros.html">Livros</a> </li>
+                <li><a href="tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme">
+        <div class="poster">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/7f/Kung_Fu_Panda_4_poster.jpg/200px-Kung_Fu_Panda_4_poster.jpg" height="295" width="200" />
+        </div>
+        <div class="info">
+            <h1> Kung-Fu Panda 4</h1>
+            <h3>Dirigido por </h3>
+            <h2>Rose Glass</h2><br>
+            <h3>2024</h3><br>
+            <h3>104 min</h3> <br>
+            <h3>Comédia Ação Artes Marciais</h3><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Rotten_Tomatoes.svg/2019px-Rotten_Tomatoes.svg.png">
+            <h3>83%</h3><br>
+            <div class="sinopse">
+                <h3>O recluso gerente de academia Lou se apaixona por Jackie, uma ambiciosa fisiculturista que viaja da cidade até Las Vegas em busca de seu sonho. Mas o amor deles desencadeia a violência, puxando-os profundamente para a teia da família criminosa de Lou.</h3><br> <br>
+                <div class="trailer">
+                    <button style="font-family: 'FonteCorpo';" onclick="toggleTrailer()">Trailer</button>
+
+                    <iframe id="iframe" src="https://www.youtube.com/embed/BF_J3-DmiS0" title="Love Lies Bleeding | Official Trailer HD | A24" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="ficha">
+                    <div class="infotext">
+                        <button style="font-family: 'FonteCorpo';" onclick="toggleInfos()">Info</button>
+                    </div>
+                    <div class="infos" id="infos">
+                        <div>
+                            <h2>Elenco</h2>
+                            <ul>
+                                <li>Kristen Stewart
+                                </li>
+                                <li>Katy O’Brian</li>
+                                <li>Ed Harris</li>
+                                <li>David Franco</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Estúdio</h2>
+                            <ul>
+                                <li>A24
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>País</h2>
+                            <ul>
+                                <li>Estados Unidos
+                                </li>
+                                <li>Reino Unido</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Idioma</h2>
+                            <ul>
+                                <li>Inglês
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 style="font-size: 10px;">Disponível em: <button style="font-size: 10px;">torrent</button> <button style="font-size: 10px;">Drive</button></h3> <br>
+        </div>
+    </section>
+
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+
+        // Função para alternar a visibilidade do div "iframe"
+        function toggleTrailer() {
+            var iframe = document.getElementById('iframe');
+            iframe.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

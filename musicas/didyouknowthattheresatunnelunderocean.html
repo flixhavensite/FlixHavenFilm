@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Torrents - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/song.css'>
+    <link rel="icon" href="UTorrent_(logo).png">
+    <style>
+        .infos {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../index.html">Filmes</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="livros.html">Livros</a> </li>
+                <li><a href="tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        @media screen and (max-width: 435px){
+            section.filme{
+            background-position-x: 40%;
+            }
+        }
+    </style>
+    <section class="filme"
+        style="background-image: url(); position: relative; background-repeat: no-repeat; background-position-x: 0%;">
+        <div class="infoblock">
+            <div class="info">
+                <h1>Did You Know That There's a Tunnel Under Ocean Blvd</h1><br>
+                <h2>Lana Del Rey</h2><br>
+                <h3>2023</h3><br>
+                <h3>16 músicas, 1h 17 min</h3> <br>
+                <h3>Alternativo</h3><br>
+                <div class="sinopse">
+                    <h3>Lana Del Rey domina a arte de fazer álbuns conceituais de pop alternativo. Meticulosamente concebidos, eles estabelecem – e amplificam constantemente – a própria mitologia da artista; a cada álbum ficamos mais apaixonados e temos menos certezas sobre quem ela é. Isso é parte da magia e fonte de boa parte de seu poder artístico. </h3><br> <br>
+   
+                    <div class="ficha">
+                        <div class="infotext">
+                        </div>
+                        <div class="infos" id="infos">
+                                <h2>Faixas</h2>
+                                <ol>
+                                    <li>The Grants</li>
+                                   <li> Did You Know That There's a <br> Tunnel Under Ocean Blvd</li>
+                                    <li>Sweet</li>
+                                    <li>A&W</li>
+                                   <li>Candy Necklace</li>
+                                    <li>Kintsugi</li>
+                                    <li>Fingertips</i>
+                                    <li>Paris, Texas</li>
+                                    <li>Let The ligth in</li>
+                                    <li>Peppers</li>
+                                    <li>Fishtail</li>
+                                    <li>Taco Truck X VB</li>
+                                    
+                                </ol>
+                        
+    
+                        </div>
+                    </div>
+                    <a><button onclick="toggleInfos()">Faixas</button></a>
+                            <a
+                            href='magnet:?xt=urn:btih:db10408b6922dd8aa7f0210307a9f4a51e2b0de6&dn=Love.Lies.Bleeding.2024.HDCAM.c1nem4.x264-SUNSCREEN+%5BTGx%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Fopen.stealth.si%3A80&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337'>
+                            <button>Baixar via Torrent</button>
+                        </a>
+                        <a  href="https://www.youtube.com/watch?v=ZegtK54DC4c&list=PLMFUaRAk0WsaVFnALxOm_2FE8qPXf9UIg&pp=iAQB" target="_blank">
+                            <button>▶ Ouvir Online</button>
+                        </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="trialers">
+        <h1 style="padding-left: 1%;">Videoclips</h1><br>
+        <section class="trailers">
+            <iframe src="https://www.youtube.com/embed/C2e0H6MUWyU" title="Lana Del Rey - Candy Necklace (Official Video) ft. Jon Batiste" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </section>
+    </div>
+    </section>
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        // Adiciona um evento de clique ao botão "Baixar"
+        document.getElementById("botaoDownload").addEventListener("click", function () {
+            // Obtém o link de download
+            var linkDownload = document.getElementById("linkDownload").getAttribute("href");
+            // Abre o link em uma nova guia
+            window.open(linkDownload, "_blank");
+        });
+    </script>
+</body>
+
+</html>

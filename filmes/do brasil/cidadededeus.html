@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cidade de Deus</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/filme.css'>
+    <link rel="icon" href="../../imagens/FLIXHAVEN (1).png">
+    <style>
+        .infos {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../index.html">Filmes</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="livros.html">Livros</a> </li>
+                <li><a href="tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme"
+        style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTUwNjQxNDg5MV5BMl5BanBnXkFtZTcwNDc4MTE5Ng@@._V1_.jpg); position: relative; background-repeat: no-repeat; background-position-x: 40%;">
+        <div class="infoblock">
+            <div class="info">
+                <h1>Cidade De Deus</h1><br>
+                <h3>2002</h3><br>
+                <h3>130 min</h3> <br>
+                <h3>Drama Crime Policial</h3><br>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+                <h3>8,6</h3><br>
+                <div class="sinopse">
+                    <h3>Os caminhos de duas crianças divergem nas favelas do Rio, enquanto um se esforça para se tornar um fotógrafo e o outro um chefe do tráfico.</h3><br>
+                    </div> 
+                        <button onclick="toggleInfos()">Info</button>
+                        <a
+                        href='magnet:?xt=urn:btih:db10408b6922dd8aa7f0210307a9f4a51e2b0de6&dn=Love.Lies.Bleeding.2024.HDCAM.c1nem4.x264-SUNSCREEN+%5BTGx%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Fopen.stealth.si%3A80&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337'>
+                        <button>Baixar via Torrent</button>
+                    </a>
+                    <a  href="https://bflix.to/movie/free-love-lies-bleeding-hd-nwkoj/1-1" target="_blank">
+                        <button>▶ Assistir Online</button>
+                    </a>
+
+                    <div class="ficha">
+                        <div class="infotext">
+                        </div>
+                        <div class="infos" id="infos">
+
+                            <div>
+                                <h2>Elenco</h2>
+                                <ul>
+                                    <li>Kristen Stewart
+                                    </li>
+                                    <li>Katy O’Brian</li>
+                                    <li>Ed Harris</li>
+                                    <li>David Franco</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Estúdio</h2>
+                                <ul>
+                                    <li>A24
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>País</h2>
+                                <ul>
+                                    <li>Estados Unidos
+                                    </li>
+                                    <li>Reino Unido</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Idioma</h2>
+                                <ul>
+                                    <li>Inglês
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+        <h1 style="padding-left: 1%;">Trailers</h1><br>
+        <section class="trailers">
+
+            <iframe src="https://www.youtube.com/embed/BF_J3-DmiS0"
+                title="Love Lies Bleeding | Official Trailer HD | A24" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/AULR_GPteNQ"
+                title="Love Lies Bleeding | Official Trailer 2 HD | A24" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="1128" height="634" src="https://www.youtube.com/embed/S8Pr66hh8oo"
+                title="Love Lies Bleeding | Behind the Scenes | Official Featurette HD | A24" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            
+        </section>
+        <h1 style="margin-left: 2%;margin-top: 1%;">Semelhantes</h1><br>
+        <section id="filmes">
+            <div id="film" class="filme">
+                <a href="">
+                    <img  src="https://m.media-amazon.com/images/M/MV5BYTY3M2NhODAtMTRiNC00OThlLTg3YTAtNjIwNjU2Zjg1MDFhXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UY281_CR4,0,190,281_.jpg"
+                        height="295" width="200" /></a>
+                <span>4K</span><br>
+                <caption>A Vida é Bela</caption>
+            </div>
+            <div class="filme">
+                <a href="./romance/normalpeople.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDk4OTcwMjQtOWRiOS00OTM0LWIxZDgtOWFmNjdlYTIyMDc2XkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UY281_CR5,0,190,281_.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>A outra história história americana</caption>
+            </div>
+            <div class="filme">
+                <a href="./drama/ogambitodarainha.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjZhNjU0Y2ItNDhmMC00NzhhLWJlMmMtZDAwMWU5MzU3Zjg3XkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UX190_CR0,2,190,281_.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>O profissional</caption>
+            </div>
+            <!DOCTYPE html>
+    <script>
+        const apiKey = '35fc617b467751846b2b1392dad9dc73';
+        async function fetchPopularMovies() {
+            try {
+                const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
+                const data = await response.json();
+                return data.results;
+            } catch (error) {
+                console.error('Erro ao buscar filmes populares:', error);
+                return [];
+            }
+        }
+
+        // Função para exibir os posters dos filmes
+        async function displayMoviePosters() {
+            const moviesContainer = document.getElementById('film');
+            const movies = await fetchPopularMovies();
+
+            movies.forEach(movie => {
+                const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+                const movieElement = document.createElement('div');
+                movieElement.innerHTML = `
+                    <div class="movie">
+                        <a href="./filmes/${movie.id}.html">
+                            <img src="${posterUrl}" alt="${movie.title}" />
+                        </a>
+                        <span>${movie.title}</span>
+                    </div>
+                `;
+                moviesContainer.appendChild(movieElement.firstChild);
+            });
+        }
+
+        // Chamar a função para exibir os posters dos filmes
+        displayMoviePosters();
+    </script>
+</body>
+</html>
+
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        // Adiciona um evento de clique ao botão "Baixar"
+        document.getElementById("botaoDownload").addEventListener("click", function () {
+            // Obtém o link de download
+            var linkDownload = document.getElementById("linkDownload").getAttribute("href");
+            // Abre o link em uma nova guia
+            window.open(linkDownload, "_blank");
+        });
+    </script>
+</body>
+
+</html>

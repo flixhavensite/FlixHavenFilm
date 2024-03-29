@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Digite o título do filme">
+    <button onclick="searchMovies()">Buscar</button>
+
+    <div id="searchResults"></div>
+
+    <script>
+        const apiKey = '35fc617b467751846b2b1392dad9dc73';
+
+        // Função para buscar filmes por palavra-chave
+        async function searchMovies() {
+            const searchInput = document.getElementById('searchInput').value.trim();
+            const searchResultsDiv = document.getElementById('searchResults');
+            
+            // Limpar resultados anteriores
+            searchResultsDiv.innerHTML = '';
+
+            try {
+                const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchInput}`);
+                const data = await response.json();
+                
+                // Exibir resultados da busca
+                data.results.forEach(movie => {
+                    if (movie.poster_path) {
+                        const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+                        const movieElement = document.createElement('div');
+                        movieElement.innerHTML = `
+                            <div class="movie">
+                                <a href="./filmes/${movie.id}.html">
+                                    <img src="${posterUrl}" alt="${movie.title}" />
+                                </a>
+                                <span>${movie.title}</span>
+                            </div>
+                        `;
+                        searchResultsDiv.appendChild(movieElement.firstChild);
+                    }
+                });
+            } catch (error) {
+                console.error('Erro ao buscar filmes:', error);
+            }
+        }
+    </script>
+</body>
+</html>

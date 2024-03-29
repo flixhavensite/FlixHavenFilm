@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Torrents - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/filme.css'>
+    <link rel="icon" href="UTorrent_(logo).png">
+    <style>
+        .infos {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../index.html">Filmes</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="livros.html">Livros</a> </li>
+                <li><a href="tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme"
+        style="background-image: url(https://m.media-amazon.com/images/M/MV5BZTI4YjQ2MTUtNmY5NS00ZDZkLTljMTgtY2EzYjc4OGQwZjY4XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX2160_.jpg); position: relative; background-repeat: no-repeat;">
+        <div class="infoblock">
+            <div class="info">
+                <div class="info2">
+                <h1>All Of us Strangers</h1><br>
+                <h3>2023</h3><br>
+                <h3>105 min</h3> <br>
+                <h3>Romance Ficção Drama</h3><br>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+                <h3>9,8</h3><br>
+                <div class="sinopse">
+                    <h3>Uma noite em seu prédio quase vazio em Londres, Adam tem um encontro casual com seu misterioso vizinho Harry, o que acaba abalando o ritmo de sua vida cotidiana.</h3><br> <br>
+
+
+                    <div class="ficha">
+                        <div class="infotext">
+                        </div>
+                        <div class="infos" id="infos">
+
+                            <div>
+                                <h2>Elenco</h2>
+                                <ul>
+                                    <li>Kristen Stewart
+                                    </li>
+                                    <li>Katy O’Brian</li>
+                                    <li>Ed Harris</li>
+                                    <li>David Franco</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Estúdio</h2>
+                                <ul>
+                                    <li>A24
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>País</h2>
+                                <ul>
+                                    <li>Estados Unidos
+                                    </li>
+                                    <li>Reino Unido</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Idioma</h2>
+                                <ul>
+                                    <li>Inglês
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="toggleInfos()">Info</button>
+                            <a
+                            href='magnet:?xt=urn:btih:db10408b6922dd8aa7f0210307a9f4a51e2b0de6&dn=Love.Lies.Bleeding.2024.HDCAM.c1nem4.x264-SUNSCREEN+%5BTGx%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Fopen.stealth.si%3A80&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337'>
+                            <button>Baixar via Torrent</button>
+                        </a>
+                        <a  href="https://bflix.to/movie/free-all-of-us-strangers-hd-ww526/1-1" target="_blank">
+                            <button>▶ Assistir Online</button>
+                        </a>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <div id="trialers">
+        <h1 style="padding-left: 1%;">Trailers</h1><br>
+        <section class="trailers">
+         
+            <iframe width="1128" height="634" src="https://www.youtube.com/embed/O97iSjvqBlY" title="All of Us Strangers | Official Trailer | Searchlight Pictures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="1128" height="634" src="https://www.youtube.com/embed/ECymRi3mHyc" title="ALL OF US STRANGERS | In Theaters December 22 | Searchlight Pictures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="1128" height="634" src="https://www.youtube.com/embed/OVQ-7J8RHxM" title="ALL OF US STRANGERS | Behind-The-Scenes Broadcast Special | Searchlight Pictures" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        </section>
+    </section>
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        // Adiciona um evento de clique ao botão "Baixar"
+        document.getElementById("botaoDownload").addEventListener("click", function () {
+            // Obtém o link de download
+            var linkDownload = document.getElementById("linkDownload").getAttribute("href");
+            // Abre o link em uma nova guia
+            window.open(linkDownload, "_blank");
+        });
+    </script>
+</body>
+
+</html>

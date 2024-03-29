@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>X-men 97'</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/tv.css'>
+    <link rel="icon" href="../../imagens/FLIXHAVEN (1).png">
+    <style>
+        .infos {
+            opacity: 0; 
+            transition: opacity 0.3s; 
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+
+        #download {
+            opacity: 0; 
+            transition: opacity 0.3s; 
+            z-index: 10;
+        }
+
+        #download.show {
+            opacity: 1;
+            
+        }
+
+        
+    section.filme::before{
+        background-position-y: 0%;
+    }
+    @media screen  and (max-width:435px){
+        section.filme{
+        background-position-x: 50%;
+        background-position-y: 100%;
+    }
+        
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../../index.html">Filmes</a></li>
+                <li><a href="../../musicas.html">Músicas</a></li>
+                <li><a href="../../ivros.html">Livros</a> </li>
+                <li><a href="../../tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme"
+        style="background-image: url(https://m.media-amazon.com/images/M/MV5BOGY3ZWQwZWEtYzAyYi00ZTQxLWIxNDctZjZiMTRlZWRmYzlmXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_.jpg); position: relative; background-repeat: no-repeat;">
+       <div class="infoblock">
+        <div class="info">
+            <div class="info2">
+            <h1 id="titulo">X-Men: Evolution</h1><br>
+            <h3> Animação Heróis Ação</h3><br>
+            <h3>2000-2003</h3><br>
+            <h3>4 Temp. - 52 EP.</h3> <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+            <h3>7,8</h3>
+            <div class="sinopse">
+                <h3>Esta versão de X-Men apresenta Ciclope, Jean Grey, Vampira, Noturno, Lince Negra e Spike como adolescentes enquanto lutam por um mundo que os teme e odeia.</h3><br> <br>
+                <div class="ficha">
+                    <div class="infotext">
+                        <a><button style="font-family: 'FonteCorpo';" onclick="toggleInfos()">Info</button></a>
+                            <a><button style="font-family: 'FonteCorpo';" onclick="toggleDownload()">Download</button></a>
+
+                        
+                            </div>
+                    </div>
+                    <div class="infos" id="infos">
+
+                        <div>
+                            <h2>Elenco</h2>
+                            <ul>
+                                <li>Bryan Cranston
+                                </li>
+                                <li>Anna Gunn</li>
+                                <li>Aaron Paul</li>
+                                <li>RJ Mitte</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Estúdio</h2>
+                            <ul>
+                                <li>	High Bridge Entertainment Gran Via Productions 
+                                </li>
+                                <li>Sony Pictures Television</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>País</h2>
+                            <ul>
+                                <li>Estados Unidos
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Idioma</h2>
+                            <ul>
+                                <li>Inglês
+                                </li>
+                                <li>Espanhol</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="download">
+                        <div class="download">
+                            <h2>Download</h2><br>
+                            <h3>S1</h3>
+                            <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                            <h3>S2</h3>
+                            <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  
+    <div id="trialers">
+        <h1 style="margin-left: 2%;">Trailers e clips</h1><br>
+        <section class="trailers">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6faj24XtmP8?si=unMNvapd0RK04EGT&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="564" height="423" src="https://www.youtube.com/embed/mSAF2gC9CQc" title="X-Men Evolution Season 1 DVD Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <h1 style="margin-left: 2%;margin-top: 1%;">Semelhantes</h1><br>
+        <section id="filmes">
+            <div class="filme">
+                <a href="../../tv/xmen97'.html">
+                    <img src="https://sm.ign.com/ign_br/photo/m/marvel-rev/marvel-reveals-x-men-97-prequel-comic_g7qr.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>x-men 97'</caption>
+            </div>
+            <div class="filme">
+                <a href="./filmes/kunugfupanda4.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTVjNmEwNTMtNmQ2ZC00MGJkLWI3MDgtNzMyNTc4YjVkNTQ1L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_QL75_UY562_CR14,0,380,562_.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>X-men: a série...</caption>
+            </div>
+            <div class="filme">
+                <a href="./filmes/kunugfupanda4.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjY0Zjc2NGMtYzc0Yy00Y2EzLTg4YTktZTk0Y2Y0YzY3NWYxXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UY562_CR7,0,380,562_.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>O espetacular home...</caption>
+            </div>
+            
+        </section>
+    </section>
+
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+
+        // Função para alternar a visibilidade do div "iframe"
+        function toggleDownload() {
+            var download = document.getElementById('download');
+            download.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
