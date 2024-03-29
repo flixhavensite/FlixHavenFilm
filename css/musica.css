@@ -38,7 +38,7 @@ a {
 header img {
     margin-left: 3%;
     max-width: 6%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 1%;
 }
 
@@ -50,7 +50,7 @@ header {
     background-color: rgba(2, 2, 4, 0.878);
     color: rgba(18, 23, 34, 0.995);
     font-family: 'FonteTitulo';
-    height: 8%;
+    height: 10%;
     display: flex;
     align-items: center;
     box-shadow: 1px 1px 20px black;
@@ -397,15 +397,10 @@ div.musica:hover span {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     section#content h1 {
         font-size: 25px;
     }
-
-    header {
-        height: 8%;
-    }
-
     #logobanner {
         width: 25%;
     }
@@ -453,6 +448,7 @@ div.musica:hover span {
 
     nav a {
         font-size: 13px;
+        
     }
 }
 
