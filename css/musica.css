@@ -426,7 +426,7 @@ div.musica:hover span {
 @media screen and (max-width: 435px) {
     div.musica {
         font-size: 9px;
-        width: 28%;
+        width: 32%;
     }
 
     h1 {
