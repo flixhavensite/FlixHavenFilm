@@ -600,8 +600,8 @@ h1#position{
         height: auto;
     }
     div.musica h1#position{
-        font-size:12cap;
-        bottom: -.06cap;
+        font-size:15cap;
+        bottom: .5cap;
     }
 
 }
