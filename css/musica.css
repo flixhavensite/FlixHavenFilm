@@ -511,7 +511,7 @@ div.categoria:hover span {
         margin-right: -1.5%;
         margin-left: 3%;
         border-radius: 9px;
-        height: 100%;
+        height: auto;
     }
 
     section#categorias h1 {
@@ -553,13 +553,12 @@ div.categoria:hover span {
     }
 
    section#categorias  h1{
-    font-size: 17px;
+    font-size: 15px;
     bottom: -30%;
     left: 3%;
    }
     section#categorias {
         padding-top: 2%;
-        font-size: 17px;
     }
 
     div.categoria {
@@ -568,7 +567,7 @@ div.categoria:hover span {
         margin-left: 3%;
         border-radius: 9px;
         padding: 1%;
-        height: 100%;
+        height: auto;
     }
 
 }
