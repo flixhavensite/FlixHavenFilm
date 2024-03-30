@@ -201,7 +201,6 @@ section.filme::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: %;
     background-color: rgba(0, 0, 0, 0.677);
     /* Cor de fundo com opacidade reduzida */
     z-index: -1;
