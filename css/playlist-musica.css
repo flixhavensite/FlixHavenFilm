@@ -95,6 +95,10 @@ div.titulo {
     width: 100%;
 
 }
+.tabela-rolavel {
+    max-height: 300px; /* Altura máxima da tabela */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+}
 
 section.musicas img {
     margin: 2px;
