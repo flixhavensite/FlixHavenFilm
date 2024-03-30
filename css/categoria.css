@@ -366,11 +366,10 @@ div.categoria:hover span {
 }
 @media screen and (max-width: 650px) {
     div.filme {
-        width: 19.3%;
-        height: 65%;
-        margin-left: -1%;
+        width: 24%;
+        margin-left: .5%;
         font-size: 10px;
-        margin-right: 1%;
+        margin-right: 0%;
     }
      header{
         height: 9%;
@@ -403,7 +402,7 @@ div.categoria:hover span {
         backdrop-filter: blur(4%);
     }
     div.filme{
-        width: 24%;
+        width: 32%;
         font-size: 9px;
     }
     h1{
