@@ -492,7 +492,7 @@ h1#position{
         font-size: 20px;
         text-shadow: 1px 0px 5px black;
     }
-    h1#position{
+    div.musica h1#position{
         bottom: .2cap;
     
     }
@@ -601,7 +601,7 @@ h1#position{
     }
     div.musica h1#position{
         font-size:15cap;
-        bottom: .5cap;
+        bottom: -.12cap;
     }
 
 }
