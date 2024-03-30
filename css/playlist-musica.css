@@ -276,8 +276,11 @@ form {
     td h3 {
         font-size: 2cqmax;
     }
+    section.musicas table{
+       width: 80%;
+    }
     
-
+}
  
 @media screen and (max-width: 400px) {
 
@@ -374,5 +377,4 @@ form {
 
 
 
-}
 }
