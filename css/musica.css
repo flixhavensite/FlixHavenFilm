@@ -2,6 +2,10 @@
     font-family: 'FonteCorpo';
     src: url(../fontes/SF-Pro-Display-Regular.otf);
 }
+@font-face {
+    font-family: 'FonteTitulo';
+    src: url(../fontes/SF-Pro-Display-Bold.otf);
+}
 html {
     width: 100%;
 }
@@ -270,16 +274,13 @@ div.infos {
     position: relative;
     white-space: nowrap;
     overflow-x: auto;
-    /* Permite rolagem horizontal */
     -webkit-overflow-scrolling: touch;
-    /* Ativa a rolagem suave em dispositivos iOS */
     scroll-behavior: smooth;
-    /* Adiciona rolagem suave */
-    padding-bottom: 2%;
-    /* Adicionado um espaço extra para compensar a barra de rolagem vertical */
+    padding-bottom: 0%;
     padding-top: 1%;
     margin-left: 0%;
     width: auto;
+    padding-bottom: 1%;
 }
 
 #musicas::-webkit-scrollbar {
@@ -417,6 +418,25 @@ div.categoria:hover span {
     visibility: visible;
     opacity: 1;
 }
+div.position{
+    position: absolute;
+    color: aliceblue;
+    z-index: 2;
+    height: 95%;
+    width: 100%;
+    bottom: 0;
+}
+h1#position{
+    font-weight: 100;
+    font-size: 7cqmax;
+    font-family: 'FonteTitulo';
+    bottom: 0;
+    position: absolute;
+    left: -.5cap;
+    text-shadow: 0px 0px 15px black;
+    margin: 0;
+
+}
 @media screen and (max-width: 770px) {
     body {
         font-size: 14px;
@@ -472,6 +492,10 @@ div.categoria:hover span {
         font-size: 20px;
         text-shadow: 1px 0px 5px black;
     }
+    h1#position{
+        bottom: .2cap;
+    
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -523,7 +547,13 @@ div.categoria:hover span {
     }
     div.musica {
         font-size: 10px;
-        width: 30%;
+        width: 22%;
+    }
+    
+    div.musica h1#position{
+        font-size:10cap;
+        bottom: 0cap;
+    
     }
 
 }
@@ -569,6 +599,10 @@ div.categoria:hover span {
         padding: 1%;
         height: auto;
     }
+    div.musica h1#position{
+        font-size:12cap;
+        bottom: -.06cap;
+    }
 
 }
 @media screen and (max-width: 400px) {
@@ -612,7 +646,7 @@ div.categoria:hover span {
     div.sinopse {
         width: 65%;
     }
-
+   
 
 
 }
@@ -646,7 +680,12 @@ div.categoria:hover span {
 
     nav {
         margin-right: 25%;
+    }   
+     div.musica h1#position{
+        font-size: 9cap;
+        bottom: 0cap;
     }
+    
 }
 
 @media screen and (max-width: 200px) {
@@ -658,6 +697,7 @@ div.categoria:hover span {
     body {
         width: 100%;
     }
+
 
 
 }
