@@ -430,7 +430,7 @@ h1#position{
     font-weight: 100;
     font-size: 7cqmax;
     font-family: 'FonteTitulo';
-    bottom: -1cap;
+    bottom: -.1cap;
     position: absolute;
     left: -.5cap;
     text-shadow: 0px 0px 15px black;
