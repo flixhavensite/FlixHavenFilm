@@ -2,13 +2,9 @@
     font-family: 'FonteCorpo';
     src: url(../fontes/SF-Pro-Display-Regular.otf);
 }
-
-
 html {
     width: 100%;
 }
-
-
 body {
     font-family: 'FonteCorpo';
     width: 100%;
@@ -75,7 +71,7 @@ nav {
     font-family: 'FonteCorponav';
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     display: flex;
     display: inline-flex;
@@ -84,7 +80,7 @@ nav ul {
 
 }
 
-nav ul li {
+header nav ul li {
     padding: 1%;
     margin: 2%;
     margin-top: 2%;
@@ -446,9 +442,9 @@ div.musica:hover span {
         height: 60vh;
     }
 
-    nav a {
+    header nav a {
         font-size: 13px;
-        
+
     }
 }
 
