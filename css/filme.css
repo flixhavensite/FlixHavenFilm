@@ -532,4 +532,7 @@ div.info img{
         height: 160px;
 
     }
+    section.filme{
+        height: 50ch;
+    }
 }  
