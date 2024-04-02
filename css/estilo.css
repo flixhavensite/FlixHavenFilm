@@ -331,9 +331,9 @@ form{
     scroll-behavior: smooth;
     padding-bottom: 2%;
     padding-top: 1%;
-    margin-left: 0%;
-    width: auto;
-    margin-left: 1%;
+    margin-left: 1cqmax;
+    width: 100%;
+ 
 }
 #filmes::-webkit-scrollbar {
     display: none;
@@ -366,7 +366,7 @@ div.filme {
     position: relative;
     text-align: center;
     font-size: 13.5px;
-    margin-left: 1%;
+    padding-left: .7%;
     transition: .5s ease;
     margin-right: 0%;
     word-wrap: break-word;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Django Livre</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/filme.css'>
+    <link rel="icon" href="../../imagens/FLIXHAVEN (1).png">
+    <style>
+        .infos {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../index.html">Filmes</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="livros.html">Livros</a> </li>
+                <li><a href="tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme"
+        style="background-image: url(https://m.media-amazon.com/images/M/MV5BZDRkNmUyYTAtODI3Ny00NzhlLWJjODctNzU5YWM3YWExODg4XkEyXkFqcGdeQXVyNjAzODA0Njk@._V1_.jpg); position: relative; background-repeat: no-repeat; background-position-x: 40%;">
+        <div class="infoblock">
+            <div class="info">
+                <h1>Django Livre</h1><br>
+                <h3>2023</h3><br>
+                <h3>165 min</h3> <br>
+                <h3>Drama Faroeste</h3><br>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+                <h3>8,5</h3><br>
+                <div class="sinopse">
+                    <h3>Com a ajuda de um caçador de recompensas alemão, um escravo libertado sai para resgatar sua esposa de um brutal dono de uma plantação no Mississipi.</h3><br>
+                    </div> 
+                        <button onclick="toggleInfos()">Info</button>
+                        <a
+                        href='magnet:?xt=urn:btih:78d349d1d8be5130a434b77791ba144267558a92&dn=Django.Unchained.2012.1080p.BluRay.H264.AAC-LAMA+%5BTGx%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Fopen.stealth.si%3A80&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337'>
+                        <button>Baixar via Torrent</button>
+                    </a>
+                    <a  href="https://bflix.to/movie/free-django-unchained-hd-1njq/1-1" target="_blank">
+                        <button>▶ Assistir Online</button>
+                    </a>
+
+                    <div class="ficha">
+                        <div class="infotext">
+                        </div>
+                        <div class="infos" id="infos">
+
+                            <div>
+                                <h2>Elenco</h2>
+                                <ul>
+                                    <li>Jamie Foxx
+                                    </li>
+                                    <li>Christoph Waltz</li>
+                                    <li>Leonardo DiCaprio</li>
+                                    <li>Kerry Washington</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Estúdio</h2>
+                                <ul>
+                                    <li>Columbia Pictures
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Direção</h2>
+                                <ul>
+                                    <li>Quetin Tarantino
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>País</h2>
+                                <ul>
+                                    <li>Estados Unidos
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Idioma</h2>
+                                <ul>
+                                    <li>Francês
+                                    </li>
+                                    <li>Inglês
+                                    </li>
+                                    <li>Alemão
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+        
+        <section class="trailers">
+            <h1 style="padding-left: 1%;">Trailers e Clips</h1><br>
+            <div id="iframes">
+                <iframe width="702" height="395" src="https://www.youtube.com/embed/36nFZ7nNqug" title="Anatomia de Uma Queda | Trailer Oficial | Prime Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+                <iframe width="702" height="395" src="https://www.youtube.com/embed/wUcOD9f4Dvo" title="ANATOMIA DE UMA QUEDA | Trailer Oficial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="702" height="380" src="https://www.youtube.com/embed/fTrsp5BMloA" title="Anatomy of a Fall - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+        </section>
+        <h1 style="margin-left: 2%;margin-top: 1%;">Semelhantes</h1><br>
+        <section id="filmes">
+            <div id="film" class="filme">
+                <a href="">
+                    <img  src="https://m.media-amazon.com/images/M/MV5BYTY3M2NhODAtMTRiNC00OThlLTg3YTAtNjIwNjU2Zjg1MDFhXkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UY281_CR4,0,190,281_.jpg"
+                        height="295" width="200" /></a>
+                <span>4K</span><br>
+                <caption>A Vida é Bela</caption>
+            </div>
+            <div class="filme">
+                <a href="./romance/normalpeople.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDk4OTcwMjQtOWRiOS00OTM0LWIxZDgtOWFmNjdlYTIyMDc2XkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UY281_CR5,0,190,281_.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>A outra história história americana</caption>
+            </div>
+            <div class="filme">
+                <a href="./drama/ogambitodarainha.html">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjZhNjU0Y2ItNDhmMC00NzhhLWJlMmMtZDAwMWU5MzU3Zjg3XkEyXkFqcGdeQXVyMTAyOTE2ODg0._V1_QL75_UX190_CR0,2,190,281_.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>O profissional</caption>
+            </div>
+            <!DOCTYPE html>
+    <script>
+        const apiKey = '35fc617b467751846b2b1392dad9dc73';
+        async function fetchPopularMovies() {
+            try {
+                const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
+                const data = await response.json();
+                return data.results;
+            } catch (error) {
+                console.error('Erro ao buscar filmes populares:', error);
+                return [];
+            }
+        }
+
+        // Função para exibir os posters dos filmes
+        async function displayMoviePosters() {
+            const moviesContainer = document.getElementById('film');
+            const movies = await fetchPopularMovies();
+
+            movies.forEach(movie => {
+                const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+                const movieElement = document.createElement('div');
+                movieElement.innerHTML = `
+                    <div class="movie">
+                        <a href="./filmes/${movie.id}.html">
+                            <img src="${posterUrl}" alt="${movie.title}" />
+                        </a>
+                        <span>${movie.title}</span>
+                    </div>
+                `;
+                moviesContainer.appendChild(movieElement.firstChild);
+            });
+        }
+
+        // Chamar a função para exibir os posters dos filmes
+        displayMoviePosters();
+    </script>
+</body>
+</html>
+
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        // Adiciona um evento de clique ao botão "Baixar"
+        document.getElementById("botaoDownload").addEventListener("click", function () {
+            // Obtém o link de download
+            var linkDownload = document.getElementById("linkDownload").getAttribute("href");
+            // Abre o link em uma nova guia
+            window.open(linkDownload, "_blank");
+        });
+    </script>
+</body>
+
+</html>
