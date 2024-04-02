@@ -60,7 +60,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(2, 2, 4, 0.878);
+  background-color: rgba(0, 0, 0, 0.979);
     color: rgba(18, 23, 34, 0.995);
     font-family: 'FonteTitulo';
     height: 10%;
@@ -533,6 +533,6 @@ div.info img{
 
     }
     section.filme{
-        height: 50ch;
+        height: 70ch;
     }
 }  
