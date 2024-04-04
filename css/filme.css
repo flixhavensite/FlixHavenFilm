@@ -23,6 +23,93 @@ body {
     letter-spacing: .5px;
     font-weight: 100;
 }
+
+footer {
+    display: inline-table;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 17, 0.807);
+    color: rgba(29, 29, 29, 0.877);
+    text-align: center;
+    width: 100%;
+    border-top: .5px white groove ;
+}
+
+footer nav {
+    position: relative;
+    margin-bottom: 0;
+}
+
+#footer {
+    color: rgba(178, 178, 178, 0.816);
+    transition: .5s ease;
+}
+
+footer nav ul li {
+    color: rgba(178, 178, 178, 0.816);
+    margin: .1%;
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom:  0;
+    font-weight: 100;
+    transition: .5s ease;
+}
+footer li a{
+    color: rgba(178, 178, 178, 0.816);
+    
+    transition: .3s ease;
+}
+footer ul {
+    margin: 0%;
+    padding: 0;
+    margin-top: .5%;
+    width: 100%;
+}
+footer nav {
+    width: 100%;
+}
+#footer:hover {
+    color: aliceblue;
+}
+
+footer img {
+    margin: 1%;
+    max-width: 90px;
+    position: relative;
+    text-align: center;
+}
+footer li img{
+    max-width: 25px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+footer h3 {
+    position: relative;
+    margin-top: -1%;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgba(178, 178, 178, 0.816);
+    padding: 0;
+    font-style: italic;
+    margin-top: 2%;
+}
+footer h4{
+    font-size: 9px;
+    color: rgba(178, 178, 178, 0.816);
+    font-weight: 100;
+}
+#footerinfo{
+    color: rgba(178, 178, 178, 0.816);
+    display: inline-block;
+    position: relative;
+}
+div#footerinfo li{
+    display: inline-table;
+}
+footer li a:hover{
+    color: aliceblue;
+    transition: .3s ease;
+}
 h1{
     font-size:4cqmax;
     font-family: 'FonteTitulo';
@@ -73,13 +160,13 @@ header li:hover{
     transform: scale(1.1);
     transition: .3s ease;
 }
-nav{
+header nav{
   margin-left: auto;
   margin-right: 7%;
   font-size: 16px;
   font-family: 'FonteCorponav';
 }
-nav ul{
+header nav ul{
     list-style-type: none;
     display: flex;
   display: inline-flex;
@@ -87,7 +174,7 @@ nav ul{
    
    
 }
-nav ul li{
+header nav ul li{
     padding: 1%;
      margin: 2%;
      margin-top: 2%;
@@ -97,7 +184,7 @@ nav ul li{
      transition: .5s ease;
      
 }
-nav ul li:hover{
+header nav ul li:hover{
     background-color: rgba(255, 255, 255, 0.216);
     border-radius: 10px;
     transition: .5s ease;
@@ -298,6 +385,7 @@ div#iframes::-webkit-scrollbar {
     margin-left: 0%;
     width: auto;
     padding-left: 2%;
+    margin-bottom: 2cqmax;
 }
 #filmes::-webkit-scrollbar {
     display: none;

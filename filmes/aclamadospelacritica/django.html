@@ -145,43 +145,42 @@
                 <span>HD</span><br>
                 <caption>O profissional</caption>
             </div>
-            <!DOCTYPE html>
-    <script>
-        const apiKey = '35fc617b467751846b2b1392dad9dc73';
-        async function fetchPopularMovies() {
-            try {
-                const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
-                const data = await response.json();
-                return data.results;
-            } catch (error) {
-                console.error('Erro ao buscar filmes populares:', error);
-                return [];
-            }
-        }
-
-        // Função para exibir os posters dos filmes
-        async function displayMoviePosters() {
-            const moviesContainer = document.getElementById('film');
-            const movies = await fetchPopularMovies();
-
-            movies.forEach(movie => {
-                const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-                const movieElement = document.createElement('div');
-                movieElement.innerHTML = `
-                    <div class="movie">
-                        <a href="./filmes/${movie.id}.html">
-                            <img src="${posterUrl}" alt="${movie.title}" />
-                        </a>
-                        <span>${movie.title}</span>
-                    </div>
-                `;
-                moviesContainer.appendChild(movieElement.firstChild);
-            });
-        }
-
-        // Chamar a função para exibir os posters dos filmes
-        displayMoviePosters();
-    </script>
+        </section>
+            <footer>
+                <img src="../../imagens/flixhavenlogo-removebg-preview.png"><br>
+                <nav>
+                    <ul>
+                        <li><a id="footer" href=""><img src="../../imagens/redessociais/instagramlogo.png" alt=""></a></li>
+                        <li><a id="footer" href=""><img src="../../imagens/redessociais/facebooklogo.png" alt=""></a></li>
+                        <li><a id="footer"><img src="https://img.freepik.com/vetores-gratis/novo-design-de-icone-x-do-logotipo-do-twitter-em-2023_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1319243779.1711497600&semt=ais" alt="TwitterLogo"></a></li>
+                        <li><a id="footer" href=""><img src="https://i.pinimg.com/564x/99/f0/3f/99f03fdee90d871d3d1e718c82feb8be.jpg" alt=""></a></li>
+                    </ul>
+                </nav>
+                <div id="footerinfo">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Central de ajuda</a>                   </li><br>
+                            <li><a href="">Sobre</a></li>
+                            <li><a href="">Termos de Uso</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="footerinfo">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Privacidade</a>
+                            </li>
+                            <li><a href="">Contato</a></li><br>
+                            <li><a href="">Ajuda</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <br>
+                <h3>Play What You Love.</h3>
+                <h4>© 2024 FlixHaven, Inc.</h4>
+            </footer>
 </body>
 </html>
 
