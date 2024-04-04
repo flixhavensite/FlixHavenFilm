@@ -252,6 +252,8 @@ div.infoblock{
   width: 100%;
   opacity: 1;
   font-weight: 100;
+  background: linear-gradient(to left, rgba(255,255,255,0) 2%,  #0000009d 100%);
+  
 }
 div.info{
     position: absolute;
@@ -260,6 +262,7 @@ div.info{
     z-index: 4;
     padding-left: 1cqmax;
     font-weight: 100;
+
    
 }
 div.info2{
@@ -387,7 +390,7 @@ div#iframes::-webkit-scrollbar {
     padding-top: 1%;
     margin-left: 0%;
     width: auto;
-    padding-left: 2%;
+    padding-left: 1%;
     margin-bottom: 2cqmax;
 }
 #filmes::-webkit-scrollbar {
@@ -424,7 +427,7 @@ div.filme {
     font-size: 13.5px;
     margin-left: 1%;
     transition: .5s ease;
-    margin-right: -20px;
+    margin-right: 0px;
     word-wrap: break-word;
     vertical-align: top;
     color: transparent;
@@ -459,6 +462,12 @@ div.filme:hover span {
     div.info img{
         width: 7%;
     }
+    header nav a{
+        font-size: 16px;
+    }
+    header nav {
+        margin-right: 14%;
+    }
     button{
         font-size: 9px;
         padding: 1.5%;
@@ -472,10 +481,7 @@ div.filme:hover span {
     .sinopse{
         width: 90%;
     }
-    nav{
-        margin-top: 1%;
-       
-    }
+    
     nav a{
         font-size: 12px;
     }
@@ -517,6 +523,11 @@ div.filme:hover span {
         font-size: 14px;
         font-weight: 500;
     }
+    input{
+        display: none;
+        width: 0px;
+        
+    }
     .infos li{
         font-size: 10px;
     }
@@ -540,24 +551,17 @@ div.info img{
 
 
 @media screen and (max-width: 435px) {
-    nav{
-        margin-right: 15%;
-       
-    }
+    
     section.filme{
         background-position-x: 22%;
         height: 75vh;
     }
-    input{
-        display: none;
-        width: 0px;
-        
-    }
+    
     form{
         font-size: 9px ;
     }
     nav a{
-         font-size: 13px;
+         font-size: 10px;
     }
    
     .infos li{
@@ -624,5 +628,17 @@ div.info img{
     }
     section.filme{
         height: 65ch;
+    }
+    
+    footer img {
+        margin-top: 1%;
+        max-width: 14%;
+        margin: center;
+    }
+     
+    footer h3 {
+        font-size: 9px;
+        
+    
     }
 }  
