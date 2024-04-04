@@ -257,14 +257,13 @@ div.infos{
 
 section.trailers  iframe{
     position: relative;
-    margin: 0.1%;
-    width: 300px;
+    width: 290px;
     height: auto;
     transition: .5s ease;
     border-radius: 10px; 
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
     z-index: 2;
-}
+}a
 section.trailers h1{
  margin-top: -3%;
 
