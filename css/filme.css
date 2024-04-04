@@ -111,7 +111,7 @@ footer li a:hover{
     transition: .3s ease;
 }
 h1{
-    font-size:4cqmax;
+    font-size:3cqmax;
     font-family: 'FonteTitulo';
     font-weight: 100;
 }
@@ -271,8 +271,11 @@ div.info2{
     width: 2%;
     display: inline-block;
 }
+div.info h1{
+    font-size: 5cqmax;
+}
 .sinopse{
-    width: 70%;
+    width: 40cqmax;
     font-size: 9px;
     bottom: 1%;
 
