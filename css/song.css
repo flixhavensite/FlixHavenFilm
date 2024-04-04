@@ -257,7 +257,7 @@ button {
     margin-left: 0;
 }
 
-.ficha ul {
+.ficha, .download ul {
     margin: 0;
     padding: 0;
 }

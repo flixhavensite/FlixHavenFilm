@@ -46,7 +46,6 @@ a{
     font-family: 'FonteCorpo';
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 18px;
     margin-left: 2%;
 }
 header img{
@@ -232,7 +231,7 @@ div.infotext{
     vertical-align: top;
 }
 div.infos div{
-    width: 25%;
+    width: 40%;
     padding: 3px;
 }
 div.infos{
@@ -257,6 +256,7 @@ div.infos{
 
 section.trailers  iframe{
     position: relative;
+    margin: 0.1%;
     width: 290px;
     height: auto;
     transition: .5s ease;
@@ -396,7 +396,7 @@ div.filme:hover span {
         width: auto;
         margin-left: 1%;
         font-size: 10px;
-        margin-right: -15px;
+        margin-right: 0px;
     }
     section.filme{
         height: 70vh;
@@ -524,7 +524,7 @@ div.info img{
         height: 65%;
         margin-left: 0;
         font-size: 10px;
-        margin-right: -5%;
+        margin-right: 5px;
     }
     div.filme img{
         width: 115px;
@@ -532,6 +532,6 @@ div.info img{
 
     }
     section.filme{
-        height: 70ch;
+        height: 65ch;
     }
 }  

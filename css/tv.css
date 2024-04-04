@@ -24,7 +24,7 @@ body {
     font-weight: 100;
 }
 h1{
-    font-size:4cqmax;
+    font-size:3cqmax;
     font-family: 'FonteTitulo';
     font-weight: 100;
 }
@@ -46,7 +46,6 @@ a{
     font-family: 'FonteCorpo';
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 18px;
     margin-left: 2%;
 }
 header img{
@@ -201,18 +200,24 @@ div.info2{
     padding: 4px;
     margin-bottom: 1%;
     display: inline-block;
-    margin-right: -1.5%;
+    margin-right: .5cqmax;
     margin-top: 1%;
     margin-left: 0;
 }
 
-.ficha ul{
+div.infos ul{
     margin: 0;
     padding: 0;
+    margin-left: 0;
 }
-.ficha li{
+div.infos li{
     list-style-type: none;
     text-align: left;
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
 }
 div.infotext{
     width: auto;
@@ -226,18 +231,49 @@ div.infotext{
     font-size: 18px;
     font-weight:550;
 }
-.ficha .infos div{
+div.infos div{
     display: inline-block;
     margin-left: 5%;
-    vertical-align: top;
-}
-div.infos div{
-    width: 25%;
+    width: 20%;
     padding: 3px;
+    vertical-align: top;
+    margin-left: 0;
 }
 div.infos{
-    left: 1%;
-    bottom: 15%;
+    left: 0%;
+    bottom: 20%;
+    margin: 0%;
+    position: absolute;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.892);
+    background-color: rgba(64, 64, 64, 0.977);
+    border-radius: 8px;
+    backdrop-filter:blur(10px) ;   
+    color: aliceblue;
+   font-size: 14px;
+   padding: 1cqmax; 
+   opacity: 0;
+   z-index: 6;
+   width: auto;
+   transition: 0.5s ease;
+   z-index: 2;
+}
+
+.dowload ul{
+    margin: 0;
+    padding: 0;
+}
+.download li{
+    list-style-type: none;
+    text-align: left;
+}
+
+.ficha h2{
+    font-size: 18px;
+    font-weight:550;
+}
+div#download{
+    left: 4%;
+    bottom: 20%;
     margin: 0%;
     position: absolute;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.892);
@@ -251,20 +287,16 @@ div.infos{
    z-index: 6;
    transition: 0.5s ease;
 }
-#trailers{
-    margin-top: 10%;
-}
-
 section.trailers  iframe{
     position: relative;
     margin: 0.1%;
-    width: 300px;
+    width: 290px;
     height: auto;
     transition: .5s ease;
     border-radius: 10px; 
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.21);
     z-index: 2;
-}a
+}
 section.trailers h1{
  margin-top: -3%;
 
@@ -334,7 +366,7 @@ div.filme {
     font-size: 13.5px;
     margin-left: 1%;
     transition: .5s ease;
-    margin-right: -20px;
+    margin-right: 0px;
     word-wrap: break-word;
     vertical-align: top;
     color: transparent;
@@ -397,7 +429,7 @@ div.filme:hover span {
         width: auto;
         margin-left: 1%;
         font-size: 10px;
-        margin-right: -15px;
+        margin-right: 2px;
     }
     section.filme{
         height: 70vh;
@@ -477,12 +509,9 @@ div.info img{
     div.info img{
         width: 6%;
     }
-    .info h2{
-        font-size: 11px;
+    div.infos h2{
+        font-size: 13px;
         font-weight: 100;
-    }
-    .info h1{
-        font-size: 28px
     }
     h3{
      font-size: 12px;
@@ -525,7 +554,7 @@ div.info img{
         height: 65%;
         margin-left: 0;
         font-size: 10px;
-        margin-right: -5%;
+        margin-right: 5px;
     }
     div.filme img{
         width: 115px;
@@ -533,6 +562,19 @@ div.info img{
 
     }
     section.filme{
-        height: 70ch;
+        height: 65ch;
+    }
+    div#download{
+        width: 30%;
+    }
+    div#download button{
+        font-size: 7px;
+        padding: 2px;
+    }
+    div.infos{
+        width: 100%;
+    }
+    div.infos div{
+        width: 30%;
     }
 }  

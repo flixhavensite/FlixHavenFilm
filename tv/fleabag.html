@@ -10,8 +10,8 @@
     <link rel="icon" href="../imagens/FLIXHAVEN (1).png">
     <style>
         .infos {
-            opacity: 0; 
-            transition: opacity 0.3s; 
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
         .infos.show {
@@ -19,27 +19,28 @@
         }
 
         #download {
-            opacity: 0; 
-            transition: opacity 0.3s; 
+            opacity: 0;
+            transition: opacity 0.3s;
             z-index: 10;
         }
 
         #download.show {
             opacity: 1;
-            
+
         }
 
-        
-    section.filme::before{
-        background-position-y: 0%;
-    }
-    @media screen  and (max-width:435px){
-        section.filme{
-        background-position-x: 50%;
-        background-position-y: 100%;
-    }
-        
-    }
+
+        section.filme::before {
+            background-position-y: 0%;
+        }
+
+        @media screen and (max-width:435px) {
+            section.filme {
+                background-position-x: 50%;
+                background-position-y: 100%;
+            }
+
+        }
     </style>
 </head>
 
@@ -63,24 +64,27 @@
     </header>
     <section class="filme"
         style="background-image: url(https://m.media-amazon.com/images/M/MV5BZTIwNThkY2MtYTQ2ZC00ZGJiLTllOGYtNzgxMTY0ZGU0YmY1XkEyXkFqcGdeQXVyMTI3Mzg3MzE1._V1_.jpg); position: relative; background-repeat: no-repeat;">
-       <div class="infoblock">
-        <div class="info">
+        <div class="infoblock">
+            <div class="info">
 
-            <h1>Fleabag</h1><br>
-            <h3>Drama</h3><br>
-            <h3>2024</h3><br>
-            <h3>2 Temp. - 12 EP.</h3> <br>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
-            <h3>9,8</h3>
-            <div class="sinopse">
-                <h3>Comédia adaptada sobre uma jovem tentando lidar com a vida em Londres, enquanto enfrenta uma recente tragédia.</h3><br> <br>
-                <div class="ficha">
-                    <div class="infotext">
-                        <button style="font-family: 'FonteCorpo';" onclick="toggleInfos()">Info</button>
-                            <a><button style="font-family: 'FonteCorpo';" onclick="toggleDownload()">Download</button></a>
+                <h1>Fleabag</h1><br>
+                <h3>Drama</h3><br>
+                <h3>2024</h3><br>
+                <h3>2 Temp. - 12 EP.</h3> <br>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+                <h3>9,8</h3>
+                <div class="sinopse">
+                    <h3>Comédia adaptada sobre uma jovem tentando lidar com a vida em Londres, enquanto enfrenta uma
+                        recente tragédia.</h3><br> <br>
+                    <div class="ficha">
+                        <div class="infotext">
+                            <button style="font-family: 'FonteCorpo';" onclick="toggleInfos()">Info</button>
+                            <a><button style="font-family: 'FonteCorpo';"
+                                    onclick="toggleDownload()">Download</button></a>
 
-                        
-                            </div>
+
+                        </div>
                     </div>
                     <div class="infos" id="infos">
 
@@ -117,24 +121,34 @@
                             </ul>
                         </div>
                     </div>
-                        <div  id="download" class="download">
-                            <h3>S1</h3>
-                            <a><button style="font-size: 10px;">Torrent</button> </a><br>
-                            <h3>S2</h3>
-                            <a><button style="font-size: 10px;">Torrent</button> </a><br>
-                        </div>
+                    <div id="download" class="download">
+                        <h3>S1</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S2</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                    </div>
                 </div>
             </div>
         </div>
 
-  
-    <div id="trialers">
-        <h1 style="margin-left: 2%;">Trailers</h1><br>
-        <section class="trailers">
-            <iframe width="1128" height="634" src="https://www.youtube.com/embed/Nd3Qlo0qspU" title="Fleabag - Trailer | Amazon Prime Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/aX2ViKQFL_k" title="Fleabag Season 2 - Official Trailer | Prime Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/fKVIR-OSYyY" title="Best of Claire | Fleabag | Prime Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+
+        <div id="trialers">
+            <section class="trailers">
+                <h1 style="margin-left: 2%;">Trailers e clips</h1><br>
+                    <div id="iframes">
+                <iframe width="1128" height="634" src="https://www.youtube.com/embed/Nd3Qlo0qspU"
+                    title="Fleabag - Trailer | Amazon Prime Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/aX2ViKQFL_k"
+                    title="Fleabag Season 2 - Official Trailer | Prime Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/fKVIR-OSYyY"
+                    title="Best of Claire | Fleabag | Prime Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         </div>
         <h1 style="margin-left: 2%;margin-top: 1%;">Semelhantes</h1><br>
         <section id="filmes">
@@ -147,19 +161,19 @@
             </div>
             <div class="filme">
                 <a href="./romance/normalpeople.html">
-                    <img src="https://m.media-amazon.com/images/I/81l9ENSk5VL._AC_UF1000,1000_QL80_.jpg"
-                        height="295" width="200" /></a>
+                    <img src="https://m.media-amazon.com/images/I/81l9ENSk5VL._AC_UF1000,1000_QL80_.jpg" height="295"
+                        width="200" /></a>
                 <span>HD</span><br>
                 <caption>Normal People</caption>
             </div>
             <div class="filme">
                 <a href="./drama/ogambitodarainha.html">
-                    <img src="https://m.media-amazon.com/images/I/61D4EEaQVRL._AC_UF1000,1000_QL80_.jpg"
-                        height="295" width="200" /></a>
+                    <img src="https://m.media-amazon.com/images/I/61D4EEaQVRL._AC_UF1000,1000_QL80_.jpg" height="295"
+                        width="200" /></a>
                 <span>HD</span><br>
                 <caption>O gambito da rainha</caption>
             </div>
-            
+
         </section>
     </section>
 
