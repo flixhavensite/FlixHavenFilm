@@ -275,7 +275,7 @@ div.info2{
     display: inline-block;
 }
 div.info h1{
-    font-size: 5cqmax;
+    font-size: 4.3cqmax;
 }
 .sinopse{
     width: 40cqmax;
@@ -390,6 +390,7 @@ div#iframes::-webkit-scrollbar {
     padding-top: 1%;
     margin-left: 0%;
     width: auto;
+    padding-top: 5px;
     padding-left: 1%;
     margin-bottom: 2cqmax;
 }
@@ -462,9 +463,6 @@ div.filme:hover span {
     div.info img{
         width: 7%;
     }
-    header nav a{
-        font-size: 16px;
-    }
     header nav {
         margin-right: 14%;
     }
@@ -482,9 +480,7 @@ div.filme:hover span {
         width: 90%;
     }
     
-    nav a{
-        font-size: 12px;
-    }
+   
     nav ul li{
         margin-right: 1.5%;
     }
@@ -501,9 +497,6 @@ div.filme:hover span {
     div.filme img {
         width: 110px;
         height: 160px;
-    }
-    h1{
-        font-size: 28px;
     }
     h2{
         font-size: 16px;
@@ -561,7 +554,7 @@ div.info img{
         font-size: 9px ;
     }
     nav a{
-         font-size: 10px;
+         font-size: 13px;
     }
    
     .infos li{
@@ -575,9 +568,6 @@ div.info img{
         font-size: 11px;
         font-weight: 100;
     }
-    .info h1{
-        font-size: 28px
-    }
     h3{
      font-size: 12px;
     }
@@ -589,7 +579,7 @@ div.info img{
     }
 
     section.trailers iframe{
-        width: 50%;
+        width: 80%;
     }
     section.filme::before{
   

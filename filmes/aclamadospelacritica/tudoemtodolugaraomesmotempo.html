@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tudo Em Todo O Lugar Ao Mesmo Tempo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/filme.css'>
+    <link rel="icon" href="../../imagens/FLIXHAVEN (1).png">
+    <style>
+        .infos {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+
+        @media screen and (max-width: 430px) {
+            section.filme {
+                background-position-x: 60%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../../index.html">Filmes</a></li>
+                <li><a href="../../musicas.html">Músicas</a></li>
+                <li><a href="../../livros.html">Livros</a> </li>
+                <li><a href="../../tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme"
+        style="background-image: url(https://m.media-amazon.com/images/M/MV5BMTVlZTkwMjUtM2RmZC00NGViLTgyZjAtYzZmNzdhYzhiMTgyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg); position: relative; background-repeat: no-repeat; background-position-x: %;">
+        <div class="infoblock">
+            <div class="info">
+                <h1>Tudo Em Todo o Lugar Ao Mesmo Tempo</h1><br>
+                <h3>2022</h3><br>
+                <h3>140 min</h3> <br>
+                <h3>Ação Comédia Aventura</h3><br>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+                <h3>7,8</h3><br>
+                <div class="sinopse">
+                    <h3>Uma imigrante chinesa de meia idade se envolve em uma aventura louca, onde só ela pode salvar o
+                        mundo explorando outros universos que se conectam com as vidas que ela poderia ter levado.<h3>
+                            <br>
+                </div>
+                <button onclick="toggleInfos()">Info</button>
+                <a
+                    href='magnet:?xt=urn:btih:ffd2619191617cba6bd630af92dbffc77333bcac&dn=Everything.Everywhere.All.at.Once.2022.1080p.BluRay.x265-RARBG&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451&tr=udp%3A%2F%2Fopen.stealth.si%3A80&tr=udp%3A%2F%2Ftracker.moeking.me%3A6969&tr=udp%3A%2F%2Fopentracker.i2p.rocks%3A6969&tr=udp%3A%2F%2Fopen.tracker.cl%3A1337'>
+                    <button>Baixar via Torrent</button>
+                </a>
+                <a href="https://bflix.to/movie/free-everything-everywhere-all-at-once-hd-20vk2" target="_blank">
+                    <button>▶ Assistir Online</button>
+                </a>
+
+                <div class="ficha">
+                    <div class="infotext">
+                    </div>
+                    <div class="infos" id="infos">
+
+                        <div>
+                            <h2>Elenco</h2>
+                            <ul>
+                                <li>
+                                    Michelle Yeoh
+                                </li>
+                                <li>
+
+                                   
+Stephanie Hsu</li>
+                                <li>
+                                    
+Ke Huy Quan</li>
+                                <li>
+                                    Jamie Lee Curtis</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Estúdio</h2>
+                            <ul>
+                                <li>A24
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Direção</h2>
+                            <ul>
+                                <li>Daniel Kwan
+                                </li>
+                                <li>Daniel Scheinert
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>País</h2>
+                            <ul>
+                                <li>Estados Unidos
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Idioma</h2>
+                            <ul>
+                                <li>Inglês
+                                </li>
+                                <li>Mandarim
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="trailers">
+            <h1>Trailers e Clips</h1><br>
+            <div id="iframes">
+                <iframe width="694" height="480" src="https://www.youtube.com/embed/wxN1T1uxQ2g"
+                    title="Everything Everywhere All At Once | Official Trailer HD | A24" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="694" height="480" src="https://www.youtube.com/embed/kULcXm9V7aY"
+                    title="Tudo Em Todo O Lugar Ao Mesmo Tempo  |  Trailer Legendado" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="694" height="480" src="https://www.youtube.com/embed/D6hD2bjEtSQ"
+                    title="Tudo Em Todo O Lugar Ao Mesmo Tempo | Trailer 2 Dublado | Especial Oscar (Dublado Por Adrian Clips)"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+        </section>
+        <h1 style="padding-left: 1cqmax;">Semelhantes</h1><br>
+        <section id="filmes">
+            <div id="film" class="filme">
+                <a href="">
+                    <img src="https://veja.abril.com.br/wp-content/uploads/2020/02/poster-filme-parasite.jpg?quality=70&strip=info&w=720&crop=1" height="295"
+                        width="200" /></a>
+                <span>4K</span><br>
+                <caption>Parasita</caption>
+            </div>
+            <div class="filme">
+                <a href="./romance/normalpeople.html">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fNtqD4BTFj0Bgo9lyoAtmNFzxHN.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>Barbie</caption>
+            </div>
+            <div class="filme">
+                <a href="./drama/ogambitodarainha.html">
+                    <img src="https://br.web.img2.acsta.net/pictures/21/12/06/21/17/3973076.jpg" height="295"
+                        width="200" /></a>
+                <span>HD</span><br>
+                <caption>Não Olhe pra Cima</caption>
+            </div>
+        </section>
+        <footer>
+            <img src="../../imagens/FLIXHAVEN (1).png"><br>
+            <nav>
+                <ul>
+                    <li><a id="footer" href=""><img src="../../imagens/redessociais/instagramlogo.png" alt=""></a></li>
+                    <li><a id="footer" href=""><img src="../../imagens/redessociais/facebooklogo.png" alt=""></a></li>
+                    <li><a id="footer"><img
+                                src="https://img.freepik.com/vetores-gratis/novo-design-de-icone-x-do-logotipo-do-twitter-em-2023_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1319243779.1711497600&semt=ais"
+                                alt="TwitterLogo"></a></li>
+                    <li><a id="footer" href=""><img
+                                src="https://i.pinimg.com/564x/99/f0/3f/99f03fdee90d871d3d1e718c82feb8be.jpg"
+                                alt=""></a></li>
+                </ul>
+            </nav>
+            <div id="footerinfo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Central de ajuda</a>
+                        </li><br>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Termos de Uso</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="footerinfo">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Privacidade</a>
+                        </li>
+                        <li><a href="">Contato</a></li><br>
+                        <li><a href="">Ajuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+            <h3>Play What You Love.</h3>
+            <h4>© 2024 FlixHaven, Inc.</h4>
+        </footer>
+
+        <script>
+            const apiKey = '35fc617b467751846b2b1392dad9dc73';
+            async function fetchPopularMovies() {
+                try {
+                    const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
+                    const data = await response.json();
+                    return data.results;
+                } catch (error) {
+                    console.error('Erro ao buscar filmes populares:', error);
+                    return [];
+                }
+            }
+
+            // Função para exibir os posters dos filmes
+            async function displayMoviePosters() {
+                const moviesContainer = document.getElementById('film');
+                const movies = await fetchPopularMovies();
+
+                movies.forEach(movie => {
+                    const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+                    const movieElement = document.createElement('div');
+                    movieElement.innerHTML = `
+                    <div class="movie">
+                        <a href="./filmes/${movie.id}.html">
+                            <img src="${posterUrl}" alt="${movie.title}" />
+                        </a>
+                        <span>${movie.title}</span>
+                    </div>
+                `;
+                    moviesContainer.appendChild(movieElement.firstChild);
+                });
+            }
+
+            // Chamar a função para exibir os posters dos filmes
+            displayMoviePosters();
+        </script>
+
+</body>
+
+</html>
+
+<script>
+    // Função para alternar a visibilidade do div "infos"
+    function toggleInfos() {
+        var infos = document.getElementById('infos');
+        infos.classList.toggle('show');
+    }
+</script>
+
+<script>
+    // Adiciona um evento de clique ao botão "Baixar"
+    document.getElementById("botaoDownload").addEventListener("click", function () {
+        // Obtém o link de download
+        var linkDownload = document.getElementById("linkDownload").getAttribute("href");
+        // Abre o link em uma nova guia
+        window.open(linkDownload, "_blank");
+    });
+</script>
+</body>
+
+</html>
