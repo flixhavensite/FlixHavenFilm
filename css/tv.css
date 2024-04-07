@@ -24,7 +24,7 @@ body {
     font-weight: 100;
 }
 h1{
-    font-size:3cqmax;
+    font-size:4cqmax;
     font-family: 'FonteTitulo';
     font-weight: 100;
 }
@@ -200,7 +200,7 @@ div.info2{
     padding: 4px;
     margin-bottom: 1%;
     display: inline-block;
-    margin-right: .5cqmax;
+    margin-right: .2cqmax;
     margin-top: 1%;
     margin-left: 0;
 }
@@ -272,6 +272,7 @@ div.infos{
     font-weight:550;
 }
 div#download{
+    width: 10%;
     left: 4%;
     bottom: 20%;
     margin: 0%;
@@ -418,8 +419,12 @@ div.filme:hover span {
         margin-top: 1%;
        
     }
+    
+    header nav {
+        margin-right: 14%;
+    }
     nav a{
-        font-size: 12px;
+        font-size: 13px;
     }
     nav ul li{
         margin-right: 1.5%;
@@ -478,6 +483,12 @@ div.info img{
     width: 3%;
 }
 
+input{
+    display: none;
+    width: 0px;
+    
+}
+
 }
 
 
@@ -490,19 +501,14 @@ div.info img{
         background-position-x: 22%;
         height: 75vh;
     }
-    input{
-        display: none;
-        width: 0px;
-        
-    }
     form{
         font-size: 9px ;
     }
-    nav a{
+    nav {
          font-size: 13px;
     }
    
-    .infos li{
+    div.infos li{
         font-size: 10px;
         padding-bottom: 1%;
     }
@@ -565,7 +571,7 @@ div.info img{
         height: 65ch;
     }
     div#download{
-        width: 30%;
+        width: 50%;
     }
     div#download button{
         font-size: 7px;

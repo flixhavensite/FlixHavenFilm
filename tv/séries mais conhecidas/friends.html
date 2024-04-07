@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Friends</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../css/tv.css'>
+    <link rel="icon" href="../../imagens/FLIXHAVEN (1).png">
+    <style>
+        .infos {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .infos.show {
+            opacity: 1;
+        }
+
+        #download {
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 10;
+        }
+
+        #download.show {
+            opacity: 1;
+
+        }
+
+
+        section.filme::before {
+            background-position-y: 0%;
+        }
+
+        @media screen and (max-width:435px) {
+            section.filme {
+                background-position-x: 50%;
+                background-position-y: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../../imagens/flixhavenlogo-removebg-preview.png">
+        <nav>
+            <ul>
+                <li><a style="color: rgb(188, 215, 255);" href="../../index.html">Filmes</a></li>
+                <li><a href="../../musicas.html">Músicas</a></li>
+                <li><a href="../../livros.html">Livros</a> </li>
+                <li><a href="../../tv.html">TV</a> </li>
+                <li>
+                    <form action="seach.php" method="get">
+                        <input type="text" name="q" placeholder="Buscar filme..">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="filme"
+        style="background-image: url(https://image.tmdb.org/t/p/original/o0TYvii1gab1ThmGFegpF4iyDwf.jpg); position: relative; background-repeat: no-repeat;">
+        <div class="infoblock">
+            <div class="info">
+
+                <h1>Friends</h1><br>
+                <h3>Comédia Sitcon</h3><br>
+                <h3>1994-2004</h3><br>
+                <h3>10 Temp. - 234 EP.</h3> <br>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png">
+                <h3>9,8</h3>
+                <div class="sinopse">
+                    <h3>Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos de escola Monica, sistemática e apaixonada pela culinária.  </h3><br> <br>
+                    <div class="ficha">
+                        <div class="infotext">
+                            <button style="font-family: 'FonteCorpo';" onclick="toggleInfos()">Info</button>
+                            <a><button style="font-family: 'FonteCorpo';"
+                                    onclick="toggleDownload()">Download</button></a>
+
+
+                        </div>
+                    </div>
+                    <div class="infos" id="infos">
+
+                        <div>
+                            <h2>Elenco</h2>
+                            <ul>
+                                <li>Jennifer Aniston
+                                </li>
+                                <li>Courteney Cox</li>
+                                <li>Lisa Kudrow</li>
+                                <li>Matt LeBlanc</li>
+                                <li>Matthew Perry</li>
+                                <li>David Schwimmer</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>País</h2>
+                            <ul>
+                                <li>Estados Unidos
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Idioma</h2>
+                            <ul>
+                                <li>Inglês
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="download" class="download">
+                        <h3>S1</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S2</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S3</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S4</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S5</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S6</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S7</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S8</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S9</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                        <h3>S10</h3>
+                        <a><button style="font-size: 10px;">Torrent</button> </a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="trialers">
+            <section class="trailers">
+                <h1 style="margin-left: 2%;">Trailers e clips</h1><br>
+                    <div id="iframes">
+                        <iframe width="694" height="390" src="https://www.youtube.com/embed/6otpNDOVol0" title="Abertura de FRIENDS legendada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="754" height="480" src="https://www.youtube.com/embed/IEEbUzffzrk" title="Friends (1994-2004) Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              
+        </div>
+        </div>
+        <h1 style="margin-left: 2%;margin-top: 1%;">Semelhantes</h1><br>
+        <section id="filmes">
+            <div class="filme">
+                <a href="./aventura/killingeve.html">
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/578tlvbrpFwc959bQTT93W2RYA.jpg"
+                        height="295" width="200" /></a>
+                <span>HD</span><br>
+                <caption>Como Eu Conheci Sua Mãe</caption>
+            </div>
+            <div class="filme">
+                <a href="./romance/normalpeople.html">
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1oODZKc1dpQZvtZPaZVWR11dzEI.jpg" height="295"
+                        width="200" /></a>
+                <span>HD</span><br>
+                <caption>Big Bang: A Teoria</caption>
+            </div>
+            <div class="filme">
+                <a href="./drama/ogambitodarainha.html">
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/dPCv0RaOj2pRxZcUDOoqXFe7Pqn.jpg" height="295"
+                        width="200" /></a>
+                <span>HD</span><br>
+                <caption>Dois Homens e Meio</caption>
+            </div>
+
+        </section>
+    </section>
+
+    <script>
+        // Função para alternar a visibilidade do div "infos"
+        function toggleInfos() {
+            var infos = document.getElementById('infos');
+            infos.classList.toggle('show');
+        }
+
+        // Função para alternar a visibilidade do div "iframe"
+        function toggleDownload() {
+            var download = document.getElementById('download');
+            download.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
