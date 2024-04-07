@@ -280,8 +280,6 @@ div.info h1{
 .sinopse{
     width: 40cqmax;
     font-size: 9px;
-    bottom: 1%;
-
 }
  button{
     font-size: 15px;
@@ -289,12 +287,12 @@ div.info h1{
     border-radius: 4px;
     border: blue;
     width: auto;
-    margin-top: 3px;
+    margin-top: 5px;
     padding: 4px;
     margin-bottom: 1%;
     display: inline-block;
     margin-right: -1.5%;
-    margin-top: 1%;
+   
     margin-left: 0;
 }
 
@@ -369,8 +367,8 @@ section.trailers {
 div#iframes{
     background-color: rgba(14, 14, 14, 0.962);
     padding: 8px;
-    border-radius: 10px;
-    width: auto;
+    border-radius: 10px; 
+
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     overflow-x: auto;
@@ -390,8 +388,8 @@ div#iframes::-webkit-scrollbar {
     padding-top: 1%;
     margin-left: 0%;
     width: auto;
-    padding-top: 5px;
-    padding-left: 1%;
+    padding-top: 7px;
+    padding-left: 5px;
     margin-bottom: 2cqmax;
 }
 #filmes::-webkit-scrollbar {
