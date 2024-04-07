@@ -851,10 +851,10 @@ div.estudio:hover span {
         margin-left: 1%;
     }
     section.destaque{
-        height: 40vh;
+        height:50vh;
     }
     section.destaque::before{
-        height: 40vh;
+        height: 50vh;
     }
     div.info h1{
         font-size: 25px;
